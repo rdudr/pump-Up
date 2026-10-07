@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pump-Up</string>
+    <string name="title_activity_main">Pump-Up</string>
+    <string name="package_name">com.kisem.pumpup</string>
+    <string name="custom_url_scheme">com.kisem.pumpup</string>
+</resources>

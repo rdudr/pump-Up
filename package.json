@@ -1,0 +1,49 @@
+{
+  "name": "pump-up",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:mobile": "node scripts/build-mobile.mjs",
+    "icons": "node scripts/generate-icons.mjs",
+    "export:apk": "node scripts/export-apk.mjs",
+    "start": "next start",
+    "lint": "eslint",
+    "test:calc": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-calc.mts"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4",
+    "@capacitor/filesystem": "^8.1.2",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "idb-keyval": "^6.2.2",
+    "lucide-react": "^1.14.0",
+    "next": "16.2.6",
+    "next-themes": "^0.4.6",
+    "nodemailer": "^8.0.7",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.6.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

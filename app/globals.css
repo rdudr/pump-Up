@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #020617;
+  --foreground: #e2e8f0;
+  --card: rgba(15, 23, 42, 0.55);
+  --border: rgba(148, 163, 184, 0.14);
+  --accent: #22d3ee;
+  --accent-soft: rgba(34, 211, 238, 0.12);
+  /* Pump-Up logo colours */
+  --brand-blue: #1a00aa;
+  --brand-sky: #d4f0fc;
+  --brand-yellow: #ffde00;
+  --brand-red: #e3000f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-sky: var(--brand-sky);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-red: var(--brand-red);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+}
+
+/* Number inputs: hide spinners, they get in the way on phones */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
